@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI for Healthcare</title>
+</head>
+<body>
+    <h2>Heart Disease Prediction</h2>
+    <form action="/predict" method="post">
+        <input name="age" placeholder="Age" required><br>
+        <input name="sex" placeholder="Sex (1=Male,0=Female)" required><br>
+        <input name="cp" placeholder="Chest Pain Type" required><br>
+        <input name="trestbps" placeholder="Resting BP" required><br>
+        <input name="chol" placeholder="Cholesterol" required><br>
+        <input name="fbs" placeholder="Fasting Blood Sugar" required><br>
+        <input name="thalach" placeholder="Max Heart Rate" required><br>
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
